@@ -1,0 +1,93 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+
+mat-toolbar{
+  background: #085078;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}  
+
+
+span{
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #085078;
+  margin-left: 2rem;
+  letter-spacing: 0.3rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  background-color: rgba(3, 154, 255, 0.3);
+  border-radius: 0.1rem;
+  size: 20px;
+  width: 20px;
+}
+
+.sectionA{
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  flex:wrap;
+}
+
+a mat-icon{
+  display:none;
+}
+
+a:hover {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #478aae;
+  color: white;
+}
+
+a:hover h2{
+  display: none;
+}
+
+a:hover mat-icon{
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+mat-nav-list{
+  align-items: center;
+  justify-content: center;
+}
+
+a .sectionIcon{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.hamtaro{
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+h1{
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: .2rem;
+}

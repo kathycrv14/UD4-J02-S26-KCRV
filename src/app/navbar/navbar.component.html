@@ -1,0 +1,56 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <h1 class="text-center pt-3">menu</h1>
+      <mat-nav-list>
+          <!-- Home -->
+          <a mat-list-item routerLink="home" class="text-center">
+            <h2>Home</h2>
+            <section class="sectionIcon">
+              <mat-icon aria-hidden="true" fontIcon="home"></mat-icon>  
+            </section>
+          </a>  
+          
+          <!-- Usuarios -->
+          <a mat-list-item routerLink="lista" class="text-center">
+            <h2>Users</h2>
+            <section class="sectionIcon">
+              <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="people"></mat-icon>
+            </section>
+          </a>
+        
+          <!-- Login -->
+          <a mat-list-item routerLink="login" *ngIf="!usuariologueado" class="text-center">
+            <h2>Login</h2>
+            <section class="sectionIcon">
+              <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="how_to_reg"></mat-icon>
+            </section>
+          </a>
+          <a mat-list-item routerLink="login" *ngIf="usuariologueado" (click)="logout()" class="text-center">
+            <h2>Logout</h2>
+            <section class="sectionIcon">
+              <mat-icon aria-hidden="true" aria-label="Example home icon" fontIcon="exit_to_app"></mat-icon>
+            </section>
+          </a>
+          
+      </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span><img src="./assets/hamtaro.png" alt="" class="hamtaro">sesion 26</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+    
+  </mat-sidenav-content>
+</mat-sidenav-container>

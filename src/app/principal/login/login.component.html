@@ -1,0 +1,33 @@
+<section class="sectionGeneral p-5 d-flex justify-content-center align-items-center">
+    <section class="sectionForm login d-flex justify-content-center align-items-center">
+        <form (ngSubmit)="onSubmit()" #form="ngForm" class="p-5">
+            <h1 class="text-center">Login</h1>
+            <section class="sectionImagen">
+                <img src="./assets/image.png" alt="" class="hamtaro">    
+            </section>
+            
+            <!-- USERNAME -->  
+            <section class="sectionField">
+                <mat-form-field class="" appearance="fill">
+                    <mat-label>Username</mat-label>
+                    <input matInput  maxlength="16" type="text" placeholder="" name="username" [(ngModel)]="username" required>
+                    <mat-error *ngIf="form.controls['username'].hasError('required')">Username is required</mat-error> 
+                </mat-form-field>
+                <!-- Validacion-->
+            </section>
+            <!-- EMAIL -->  
+            <section class="sectionField">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput  type="email" placeholder="" value="" name="email" [(ngModel)]="email" required>
+                    <mat-error *ngIf="form.controls['email'].hasError('required')">Email is required</mat-error>  
+                </mat-form-field>
+                <!-- Validacion-->
+            </section>
+            <!--BOTONES -->
+            <section class="sectionButton">
+                <button mat-raised-button type="submit" color="primary">Login</button>            
+            </section>
+            </form>
+    </section>
+</section>

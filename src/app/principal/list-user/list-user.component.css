@@ -1,0 +1,58 @@
+.sectionGeneral{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex: wrap;
+
+  background: #83a4d4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+  min-height: 100%;
+}
+
+h1{
+  letter-spacing: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight:bolder;
+}
+
+.sectionTable{
+  align-items: center;
+  justify-content: center;
+  display: block;
+  flex: wrap;
+
+  width:70%;
+
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding:3rem;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+}
+
+mat-form-field{
+  margin-left:0;
+  padding-left:none;
+}
+
+form{
+  margin-left:none;
+  padding-left:none;
+}
+
+th{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+tr:nth-child(even){
+  background-color: #dcfaff;
+}

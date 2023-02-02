@@ -1,0 +1,63 @@
+.sectionGeneral{
+    background: #4CA1AF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 100vh;
+}
+
+@media (max-width: 600px){
+    .sectionForm{
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px){
+    .sectionForm{
+        width: 40%;
+    }
+}
+
+form{
+    background-color: rgb(77, 163, 176,0.3);
+    border-radius: 2rem;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+}
+
+mat-form-field{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+.sectionButton{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sectionImagen{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+}
+
+.hamtaro{
+    width: 12rem;
+    margin-right: 1rem;
+  }
